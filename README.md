@@ -20,3 +20,4 @@ Since this is a lightweight static website, there are no dependencies or build s
 1. Clone the repository:
    ```bash
    git clone [https://github.com/agrim14/your-repo-name.git](https://github.com/agrim14/your-repo-name.git)
+2. Open index.html directly in any modern web browser.
