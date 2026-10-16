@@ -5,62 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrim Dev Sharma | Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #09090b; color: #a1a1aa; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #020617; /* Deep slate */
+            background-image: radial-gradient(circle at 50% 0%, #1e293b 0%, transparent 60%);
+            color: #cbd5e1; 
+        }
         .mono { font-family: 'JetBrains Mono', monospace; }
-        .section-number { color: #52525b; font-weight: 300; letter-spacing: 0.1em; }
-        .project-tag { background: #18181b; border: 1px solid #27272a; color: #d4d4d8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .section-number { color: #64748b; font-weight: 300; letter-spacing: 0.1em; }
+        .project-tag { background: #0f172a; border: 1px solid #334155; color: #e2e8f0; padding: 2px 10px; border-radius: 6px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        /* Custom Scrollbar for a premium feel */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
     </style>
 </head>
 <body class="antialiased selection:bg-blue-500/30 selection:text-blue-200">
 
-    <div class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+    <!-- Top Navigation Bar -->
+    <nav class="fixed w-full z-50 bg-[#020617]/80 backdrop-blur-lg border-b border-slate-800/80 shadow-lg">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-white text-xl tracking-tight">agrim<span class="text-blue-500">.dev</span></a>
+            
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+                <a href="#experience" class="hover:text-white transition">Experience</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+                <a href="#achievements" class="hover:text-white transition">Achievements</a>
+            </div>
+
+            <!-- Social Links at Top -->
+            <div class="flex gap-5">
+                <a href="https://github.com/agrim14" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                <a href="https://linkedin.com/in/agrim-dev-sharma" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="mailto:agrimsharma59@gmail.com" class="text-slate-400 hover:text-white transition"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-6 pt-32 pb-16 md:pt-40 md:pb-24">
         
         <!-- Hero Section -->
         <header class="mb-24">
-            <div class="mono text-xs text-blue-400 mb-4 tracking-widest uppercase">Backend, AI & Cloud Infrastructure</div>
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">Agrim Dev Sharma</h1>
-            <p class="text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed mb-8">
+            <div class="mono text-xs text-blue-400 mb-4 tracking-widest uppercase"><i class="fas fa-terminal mr-2"></i>Backend, AI & Cloud Infrastructure</div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">Agrim Dev Sharma</h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed mb-8">
                 Building scalable enterprise cloud pipelines, agentic RAG search architectures, and secure backend systems. Java · Spring Boot · AWS · Python. CGPA 9.67.
             </p>
-            <div class="flex flex-wrap gap-6 mono text-sm">
-                <a href="https://github.com/agrim14" class="text-zinc-300 hover:text-white transition flex items-center gap-2">GITHUB ↗</a>
-                <a href="https://linkedin.com/in/agrim-dev-sharma" class="text-zinc-300 hover:text-white transition flex items-center gap-2">LINKEDIN ↗</a>
-                <a href="mailto:agrimsharma59@gmail.com" class="text-zinc-300 hover:text-white transition flex items-center gap-2">EMAIL ↗</a>
+            <div class="flex flex-wrap gap-4 mono text-sm">
+                <a href="https://github.com/agrim14" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-5 py-2.5 rounded-lg border border-slate-700 transition flex items-center gap-2">
+                    <i class="fab fa-github"></i> GITHUB
+                </a>
+                <a href="https://linkedin.com/in/agrim-dev-sharma" target="_blank" class="bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 px-5 py-2.5 rounded-lg border border-blue-500/30 transition flex items-center gap-2">
+                    <i class="fab fa-linkedin"></i> LINKEDIN
+                </a>
             </div>
         </header>
 
         <!-- Experience -->
-        <section class="mb-24">
-            <h2 class="text-2xl font-bold text-white mb-8 flex items-baseline gap-4">
+        <section id="experience" class="mb-24 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-baseline gap-4 border-b border-slate-800/50 pb-4">
                 <span class="section-number text-sm mono">01 /</span> Experience
             </h2>
-            <div class="border-l border-zinc-800 pl-6 ml-2">
-                <div class="mb-2 text-xs mono text-zinc-500">JAN – FEB 2026</div>
-                <h3 class="text-xl font-semibold text-white">Unlox</h3>
-                <div class="text-blue-400 text-sm mb-4">Cybersecurity Intern (SOC & Threat Detection) · Remote</div>
-                <ul class="space-y-3 text-sm leading-relaxed">
-                    <li class="flex gap-3"><span class="text-zinc-600">→</span> Spearheaded the deployment of an ELK Stack pipeline, analyzing 50+ GB of telemetry to mitigate 3 critical vulnerabilities.</li>
-                    <li class="flex gap-3"><span class="text-zinc-600">→</span> Authored 10+ custom detection rules for Brute-Force/SSH exploits, achieving 98% accuracy aligned with MITRE ATT&CK.</li>
+            <div class="border-l border-slate-800 pl-6 ml-2 hover:border-slate-600 transition duration-300">
+                <div class="mb-2 text-xs mono text-slate-500">JAN – FEB 2026</div>
+                <h3 class="text-xl font-bold text-white">Unlox</h3>
+                <div class="text-blue-400 text-sm mb-4 font-medium">Cybersecurity Intern (SOC & Threat Detection) · Remote</div>
+                <ul class="space-y-3 text-sm leading-relaxed text-slate-300">
+                    <li class="flex gap-3"><span class="text-slate-600">→</span> Spearheaded the deployment of an ELK Stack pipeline, analyzing 50+ GB of telemetry to mitigate 3 critical vulnerabilities.</li>
+                    <li class="flex gap-3"><span class="text-slate-600">→</span> Authored 10+ custom detection rules for Brute-Force/SSH exploits, achieving 98% accuracy aligned with MITRE ATT&CK.</li>
                 </ul>
             </div>
         </section>
 
         <!-- Projects -->
-        <section class="mb-24">
-            <h2 class="text-2xl font-bold text-white mb-10 flex items-baseline gap-4">
+        <section id="projects" class="mb-24 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-white mb-10 flex items-baseline gap-4 border-b border-slate-800/50 pb-4">
                 <span class="section-number text-sm mono">02 /</span> Projects
             </h2>
             
-            <div class="space-y-16">
+            <div class="space-y-12">
                 <!-- Project 1 -->
-                <div>
-                    <div class="text-xs mono text-zinc-500 mb-2">PROJECT 001</div>
-                    <h3 class="text-xl font-semibold text-white mb-1">AgileOps</h3>
-                    <div class="text-zinc-400 mb-4">Enterprise Cloud Pipeline</div>
+                <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 md:p-8 hover:border-slate-700 transition">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="text-xs mono text-blue-400 mb-2">PROJECT 001</div>
+                        <a href="https://github.com/agrim14" target="_blank" class="text-slate-500 hover:text-white"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">AgileOps</h3>
+                    <div class="text-slate-400 text-sm mb-4">Enterprise Cloud Pipeline</div>
                     <p class="text-sm mb-6 leading-relaxed">Engineered a zero-downtime enterprise cloud deployment pipeline using AWS ECS, accelerating container delivery by 40%. Integrated Amazon Bedrock models and AWS SSM for secure secrets injection, automating 10+ manual operational tasks.</p>
-                    <div class="flex flex-col gap-2 mb-6 text-sm">
+                    <div class="flex flex-col gap-2 mb-6 text-sm text-slate-300">
                         <div class="flex gap-3 items-center"><span class="text-lg">🚀</span> Zero-downtime AWS ECS deployments.</div>
                         <div class="flex gap-3 items-center"><span class="text-lg">🔐</span> Dynamic secrets injection via AWS SSM.</div>
                     </div>
@@ -72,12 +112,15 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div>
-                    <div class="text-xs mono text-zinc-500 mb-2">PROJECT 002</div>
-                    <h3 class="text-xl font-semibold text-white mb-1">Voice Agentic RAG Platform</h3>
-                    <div class="text-zinc-400 mb-4">Real-time Semantic Voice Search</div>
+                <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 md:p-8 hover:border-slate-700 transition">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="text-xs mono text-blue-400 mb-2">PROJECT 002</div>
+                        <a href="https://github.com/agrim14" target="_blank" class="text-slate-500 hover:text-white"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Voice Agentic RAG Platform</h3>
+                    <div class="text-slate-400 text-sm mb-4">Real-time Semantic Voice Search</div>
                     <p class="text-sm mb-6 leading-relaxed">Designed and deployed a real-time voice-driven agentic RAG system on AWS EC2, executing queries with sub-second latency. Leveraged LiveKit WebRTC and ChromaDB for semantic vector retrieval.</p>
-                    <div class="flex flex-col gap-2 mb-6 text-sm">
+                    <div class="flex flex-col gap-2 mb-6 text-sm text-slate-300">
                         <div class="flex gap-3 items-center"><span class="text-lg">⚡</span> Sub-second query execution latency via FastAPI.</div>
                         <div class="flex gap-3 items-center"><span class="text-lg">🎙️</span> 95% voice-to-query recognition accuracy.</div>
                     </div>
@@ -90,12 +133,15 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div>
-                    <div class="text-xs mono text-zinc-500 mb-2">PROJECT 003</div>
-                    <h3 class="text-xl font-semibold text-white mb-1">Enterprise CRAG System</h3>
-                    <div class="text-zinc-400 mb-4">Corrective Retrieval-Augmented Generation</div>
+                <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 md:p-8 hover:border-slate-700 transition">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="text-xs mono text-blue-400 mb-2">PROJECT 003</div>
+                        <a href="https://github.com/agrim14" target="_blank" class="text-slate-500 hover:text-white"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Enterprise CRAG System</h3>
+                    <div class="text-slate-400 text-sm mb-4">Corrective Retrieval-Augmented Generation</div>
                     <p class="text-sm mb-6 leading-relaxed">Architected a multi-stage RAG agent with Hybrid Search and FlashRank Cross-Encoder. Evaluated document context via an autonomous Binary Grader Node with Wikipedia fallback.</p>
-                    <div class="flex flex-col gap-2 mb-6 text-sm">
+                    <div class="flex flex-col gap-2 mb-6 text-sm text-slate-300">
                         <div class="flex gap-3 items-center"><span class="text-lg">🧠</span> 45% accuracy improvement via Hybrid Search.</div>
                         <div class="flex gap-3 items-center"><span class="text-lg">📉</span> 35% reduction in hallucination rates.</div>
                     </div>
@@ -108,10 +154,13 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div>
-                    <div class="text-xs mono text-zinc-500 mb-2">PROJECT 004</div>
-                    <h3 class="text-xl font-semibold text-white mb-1">AI-Powered Note-Taking API</h3>
-                    <div class="text-zinc-400 mb-4">Scalable RESTful Backend</div>
+                <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 md:p-8 hover:border-slate-700 transition">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="text-xs mono text-blue-400 mb-2">PROJECT 004</div>
+                        <a href="https://github.com/agrim14" target="_blank" class="text-slate-500 hover:text-white"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">AI-Powered Note-Taking API</h3>
+                    <div class="text-slate-400 text-sm mb-4">Scalable RESTful Backend</div>
                     <p class="text-sm mb-6 leading-relaxed">Constructed a modular backend featuring stateless JWT authentication and role-based access, supporting 500+ concurrent sessions. Collaborated with the Groq LLM API for real-time summarization.</p>
                     <div class="flex flex-wrap gap-2 mono">
                         <span class="project-tag">Java</span>
@@ -124,40 +173,40 @@
         </section>
 
         <!-- Technical Skills -->
-        <section class="mb-24">
-            <h2 class="text-2xl font-bold text-white mb-8 flex items-baseline gap-4">
+        <section id="skills" class="mb-24 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-baseline gap-4 border-b border-slate-800/50 pb-4">
                 <span class="section-number text-sm mono">03 /</span> Technical Skills
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
-                <div>
-                    <h4 class="text-white font-semibold mb-3">Backend & Languages</h4>
-                    <ul class="space-y-2">
+                <div class="p-6 bg-slate-900/30 rounded-xl border border-slate-800">
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2"><i class="fas fa-server text-blue-400"></i> Backend & Languages</h4>
+                    <ul class="space-y-2 text-slate-300">
                         <li>Java (Primary) · Python</li>
                         <li>Spring Boot · Spring Security</li>
                         <li>JWT · REST APIs</li>
                         <li>MySQL · SQL</li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-3">AI & Search Architecture</h4>
-                    <ul class="space-y-2">
+                <div class="p-6 bg-slate-900/30 rounded-xl border border-slate-800">
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2"><i class="fas fa-brain text-purple-400"></i> AI & Search</h4>
+                    <ul class="space-y-2 text-slate-300">
                         <li>RAG · Corrective RAG (CRAG)</li>
                         <li>Vector DBs (ChromaDB, FAISS)</li>
                         <li>Amazon Bedrock</li>
                         <li>Langfuse Observability</li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-3">Cloud & DevOps</h4>
-                    <ul class="space-y-2">
+                <div class="p-6 bg-slate-900/30 rounded-xl border border-slate-800">
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2"><i class="fas fa-cloud text-cyan-400"></i> Cloud & DevOps</h4>
+                    <ul class="space-y-2 text-slate-300">
                         <li>AWS (EC2, ECS, Lambda, S3, SSM)</li>
                         <li>Docker · Git · Linux</li>
                         <li>ELK Stack Pipeline</li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-3">Full-Stack & Mobile</h4>
-                    <ul class="space-y-2">
+                <div class="p-6 bg-slate-900/30 rounded-xl border border-slate-800">
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2"><i class="fas fa-mobile-alt text-green-400"></i> Full-Stack & Mobile</h4>
+                    <ul class="space-y-2 text-slate-300">
                         <li>Flutter · Dart</li>
                         <li>JavaScript</li>
                         <li>C / C++</li>
@@ -167,41 +216,41 @@
         </section>
 
         <!-- Achievements -->
-        <section class="mb-24">
-            <h2 class="text-2xl font-bold text-white mb-8 flex items-baseline gap-4">
+        <section id="achievements" class="mb-24 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-baseline gap-4 border-b border-slate-800/50 pb-4">
                 <span class="section-number text-sm mono">04 /</span> About & Achievements
             </h2>
-            <div class="space-y-6">
-                <div class="border border-zinc-800 rounded-lg p-6 bg-zinc-900/50">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="text-xl">🏆</span>
-                        <h4 class="text-white font-semibold">National Topper (AIR 3)</h4>
+            <div class="space-y-4">
+                <div class="border border-slate-800 rounded-lg p-6 bg-slate-900/30 hover:bg-slate-800/50 transition flex gap-4 items-start">
+                    <div class="text-2xl mt-1">🏆</div>
+                    <div>
+                        <h4 class="text-white font-bold">National Topper (AIR 3)</h4>
+                        <p class="text-sm text-slate-400 mt-1">Ranked 3rd nationally among 100,000+ candidates in CISCE Class XII board examinations.</p>
                     </div>
-                    <p class="text-sm text-zinc-400">Ranked 3rd nationally among 100,000+ candidates in CISCE Class XII board examinations.</p>
                 </div>
-                <div class="border border-zinc-800 rounded-lg p-6 bg-zinc-900/50">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="text-xl">🎓</span>
-                        <h4 class="text-white font-semibold">Merit Scholar</h4>
+                <div class="border border-slate-800 rounded-lg p-6 bg-slate-900/30 hover:bg-slate-800/50 transition flex gap-4 items-start">
+                    <div class="text-2xl mt-1">🎓</div>
+                    <div>
+                        <h4 class="text-white font-bold">Merit Scholar</h4>
+                        <p class="text-sm text-slate-400 mt-1">Awarded top academic performer merit scholarship at VIT Vellore (Current CGPA: 9.67).</p>
                     </div>
-                    <p class="text-sm text-zinc-400">Awarded top academic performer merit scholarship at VIT Vellore (Current CGPA: 9.67).</p>
                 </div>
-                <div class="border border-zinc-800 rounded-lg p-6 bg-zinc-900/50">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="text-xl">🤝</span>
-                        <h4 class="text-white font-semibold">Leadership</h4>
+                <div class="border border-slate-800 rounded-lg p-6 bg-slate-900/30 hover:bg-slate-800/50 transition flex gap-4 items-start">
+                    <div class="text-2xl mt-1">🤝</div>
+                    <div>
+                        <h4 class="text-white font-bold">Leadership</h4>
+                        <p class="text-sm text-slate-400 mt-1">Secretary at IEEE Professional Communication Society (PCS), spearheading tech-outreach for 500+ members.</p>
                     </div>
-                    <p class="text-sm text-zinc-400">Secretary at IEEE Professional Communication Society (PCS), spearheading tech-outreach for 500+ members.</p>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="pt-8 border-t border-zinc-800 text-sm mono text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-4">
+        <footer class="pt-8 border-t border-slate-800 text-sm mono text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
             <div>© 2026 Agrim Dev Sharma.</div>
-            <div class="flex gap-4">
-                <a href="https://github.com/agrim14" class="hover:text-white transition">GITHUB</a>
-                <a href="https://linkedin.com/in/agrim-dev-sharma" class="hover:text-white transition">LINKEDIN</a>
+            <div class="flex gap-6">
+                <a href="https://github.com/agrim14" target="_blank" class="hover:text-white transition">GITHUB</a>
+                <a href="https://linkedin.com/in/agrim-dev-sharma" target="_blank" class="hover:text-white transition">LINKEDIN</a>
             </div>
         </footer>
 
