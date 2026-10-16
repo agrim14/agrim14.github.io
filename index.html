@@ -5,191 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrim Dev Sharma | Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; background-color: #09090b; color: #a1a1aa; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .section-number { color: #52525b; font-weight: 300; letter-spacing: 0.1em; }
+        .project-tag { background: #18181b; border: 1px solid #27272a; color: #d4d4d8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-100 antialiased selection:bg-blue-500 selection:text-white">
+<body class="antialiased selection:bg-blue-500/30 selection:text-blue-200">
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <a href="#" class="text-xl font-bold tracking-tighter text-white">agrim<span class="text-blue-500">.dev</span></a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-sm text-gray-300 hover:text-white transition">About</a>
-                    <a href="#skills" class="text-sm text-gray-300 hover:text-white transition">Skills</a>
-                    <a href="#projects" class="text-sm text-gray-300 hover:text-white transition">Projects</a>
-                    <a href="#achievements" class="text-sm text-gray-300 hover:text-white transition">Achievements</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="pt-32 pb-20 sm:pt-40 sm:pb-24 px-4">
-        <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6">
-                Hi, I'm Agrim Dev Sharma
-            </h1>
-            <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Software Engineer specializing in Backend Systems, Enterprise Cloud Infrastructure, and advanced AI Search Architectures (RAG/CRAG). Integrated M.Tech student at VIT Vellore.
+    <div class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+        
+        <!-- Hero Section -->
+        <header class="mb-24">
+            <div class="mono text-xs text-blue-400 mb-4 tracking-widest uppercase">Backend, AI & Cloud Infrastructure</div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">Agrim Dev Sharma</h1>
+            <p class="text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed mb-8">
+                Building scalable enterprise cloud pipelines, agentic RAG search architectures, and secure backend systems. Java · Spring Boot · AWS · Python. CGPA 9.67.
             </p>
-            <div class="flex justify-center gap-4">
-                <a href="https://github.com/agrim14" target="_blank" class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition border border-gray-700">
-                    <i class="fab fa-github text-xl"></i> GitHub
-                </a>
-                <a href="https://linkedin.com/in/agrim-dev-sharma" target="_blank" class="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-blue-500/30">
-                    <i class="fab fa-linkedin text-xl"></i> LinkedIn
-                </a>
-                <a href="mailto:agrimsharma59@gmail.com" class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition border border-gray-700">
-                    <i class="fas fa-envelope text-xl"></i> Email
-                </a>
+            <div class="flex flex-wrap gap-6 mono text-sm">
+                <a href="https://github.com/agrim14" class="text-zinc-300 hover:text-white transition flex items-center gap-2">GITHUB ↗</a>
+                <a href="https://linkedin.com/in/agrim-dev-sharma" class="text-zinc-300 hover:text-white transition flex items-center gap-2">LINKEDIN ↗</a>
+                <a href="mailto:agrimsharma59@gmail.com" class="text-zinc-300 hover:text-white transition flex items-center gap-2">EMAIL ↗</a>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-800/50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
-                <i class="fas fa-code text-blue-500"></i> Technical Arsenal
+        <!-- Experience -->
+        <section class="mb-24">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-baseline gap-4">
+                <span class="section-number text-sm mono">01 /</span> Experience
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500/50 transition">
-                    <h3 class="font-semibold text-lg text-white mb-4">Backend & Languages</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Java, Spring Boot, Spring Security, JWT, RESTful APIs, Python, SQL, MySQL.</p>
-                </div>
-                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500/50 transition">
-                    <h3 class="font-semibold text-lg text-white mb-4">AI & Search</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">RAG, Corrective RAG (CRAG), Vector DBs (ChromaDB, FAISS), Hybrid Search (BM25, FlashRank), Langfuse, Amazon Bedrock.</p>
-                </div>
-                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500/50 transition">
-                    <h3 class="font-semibold text-lg text-white mb-4">Cloud & DevOps</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">AWS (EC2, ECS, Lambda, S3, Amplify, SSM), Docker, Git, Linux, ELK Stack.</p>
-                </div>
-                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500/50 transition">
-                    <h3 class="font-semibold text-lg text-white mb-4">Full-Stack & Mobile</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Flutter, Dart, Cross-Platform Development, JavaScript, C/C++.</p>
-                </div>
+            <div class="border-l border-zinc-800 pl-6 ml-2">
+                <div class="mb-2 text-xs mono text-zinc-500">JAN – FEB 2026</div>
+                <h3 class="text-xl font-semibold text-white">Unlox</h3>
+                <div class="text-blue-400 text-sm mb-4">Cybersecurity Intern (SOC & Threat Detection) · Remote</div>
+                <ul class="space-y-3 text-sm leading-relaxed">
+                    <li class="flex gap-3"><span class="text-zinc-600">→</span> Spearheaded the deployment of an ELK Stack pipeline, analyzing 50+ GB of telemetry to mitigate 3 critical vulnerabilities.</li>
+                    <li class="flex gap-3"><span class="text-zinc-600">→</span> Authored 10+ custom detection rules for Brute-Force/SSH exploits, achieving 98% accuracy aligned with MITRE ATT&CK.</li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
-                <i class="fas fa-layer-group text-blue-500"></i> Featured Systems
+        <!-- Projects -->
+        <section class="mb-24">
+            <h2 class="text-2xl font-bold text-white mb-10 flex items-baseline gap-4">
+                <span class="section-number text-sm mono">02 /</span> Projects
             </h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                
+            
+            <div class="space-y-16">
                 <!-- Project 1 -->
-                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-blue-500/50 transition group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4">
-                        <a href="https://github.com/agrim14" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                <div>
+                    <div class="text-xs mono text-zinc-500 mb-2">PROJECT 001</div>
+                    <h3 class="text-xl font-semibold text-white mb-1">AgileOps</h3>
+                    <div class="text-zinc-400 mb-4">Enterprise Cloud Pipeline</div>
+                    <p class="text-sm mb-6 leading-relaxed">Engineered a zero-downtime enterprise cloud deployment pipeline using AWS ECS, accelerating container delivery by 40%. Integrated Amazon Bedrock models and AWS SSM for secure secrets injection, automating 10+ manual operational tasks.</p>
+                    <div class="flex flex-col gap-2 mb-6 text-sm">
+                        <div class="flex gap-3 items-center"><span class="text-lg">🚀</span> Zero-downtime AWS ECS deployments.</div>
+                        <div class="flex gap-3 items-center"><span class="text-lg">🔐</span> Dynamic secrets injection via AWS SSM.</div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">AgileOps Cloud Pipeline</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-900/50 text-blue-300 text-xs px-2 py-1 rounded border border-blue-800">AWS ECS</span>
-                        <span class="bg-blue-900/50 text-blue-300 text-xs px-2 py-1 rounded border border-blue-800">Amazon Bedrock</span>
-                        <span class="bg-blue-900/50 text-blue-300 text-xs px-2 py-1 rounded border border-blue-800">Docker</span>
+                    <div class="flex flex-wrap gap-2 mono">
+                        <span class="project-tag">AWS ECS</span>
+                        <span class="project-tag">Amazon Bedrock</span>
+                        <span class="project-tag">Docker</span>
                     </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                        Engineered a zero-downtime enterprise cloud deployment pipeline. Integrated Amazon Bedrock foundation models and dynamic AWS SSM secrets injection to automate operational tasks, reducing container deployment latency by 40%.
-                    </p>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-blue-500/50 transition group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4">
-                        <a href="https://github.com/agrim14" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                <div>
+                    <div class="text-xs mono text-zinc-500 mb-2">PROJECT 002</div>
+                    <h3 class="text-xl font-semibold text-white mb-1">Voice Agentic RAG Platform</h3>
+                    <div class="text-zinc-400 mb-4">Real-time Semantic Voice Search</div>
+                    <p class="text-sm mb-6 leading-relaxed">Designed and deployed a real-time voice-driven agentic RAG system on AWS EC2, executing queries with sub-second latency. Leveraged LiveKit WebRTC and ChromaDB for semantic vector retrieval.</p>
+                    <div class="flex flex-col gap-2 mb-6 text-sm">
+                        <div class="flex gap-3 items-center"><span class="text-lg">⚡</span> Sub-second query execution latency via FastAPI.</div>
+                        <div class="flex gap-3 items-center"><span class="text-lg">🎙️</span> 95% voice-to-query recognition accuracy.</div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Voice Agentic RAG Platform</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-green-900/50 text-green-300 text-xs px-2 py-1 rounded border border-green-800">FastAPI</span>
-                        <span class="bg-green-900/50 text-green-300 text-xs px-2 py-1 rounded border border-green-800">LiveKit WebRTC</span>
-                        <span class="bg-green-900/50 text-green-300 text-xs px-2 py-1 rounded border border-green-800">ChromaDB</span>
+                    <div class="flex flex-wrap gap-2 mono">
+                        <span class="project-tag">FastAPI</span>
+                        <span class="project-tag">LiveKit</span>
+                        <span class="project-tag">ChromaDB</span>
+                        <span class="project-tag">AWS EC2</span>
                     </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                        Designed a real-time voice-driven agentic RAG system hosted on AWS EC2. Processed queries with sub-second latency and achieved 95% voice-to-query recognition accuracy using semantic vector retrieval.
-                    </p>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-blue-500/50 transition group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4">
-                        <a href="https://github.com/agrim14" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                <div>
+                    <div class="text-xs mono text-zinc-500 mb-2">PROJECT 003</div>
+                    <h3 class="text-xl font-semibold text-white mb-1">Enterprise CRAG System</h3>
+                    <div class="text-zinc-400 mb-4">Corrective Retrieval-Augmented Generation</div>
+                    <p class="text-sm mb-6 leading-relaxed">Architected a multi-stage RAG agent with Hybrid Search and FlashRank Cross-Encoder. Evaluated document context via an autonomous Binary Grader Node with Wikipedia fallback.</p>
+                    <div class="flex flex-col gap-2 mb-6 text-sm">
+                        <div class="flex gap-3 items-center"><span class="text-lg">🧠</span> 45% accuracy improvement via Hybrid Search.</div>
+                        <div class="flex gap-3 items-center"><span class="text-lg">📉</span> 35% reduction in hallucination rates.</div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Enterprise CRAG System</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-purple-900/50 text-purple-300 text-xs px-2 py-1 rounded border border-purple-800">Python</span>
-                        <span class="bg-purple-900/50 text-purple-300 text-xs px-2 py-1 rounded border border-purple-800">LangChain</span>
-                        <span class="bg-purple-900/50 text-purple-300 text-xs px-2 py-1 rounded border border-purple-800">FAISS</span>
+                    <div class="flex flex-wrap gap-2 mono">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">LangChain</span>
+                        <span class="project-tag">FAISS</span>
+                        <span class="project-tag">Langfuse</span>
                     </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                        Architected a multi-stage RAG agent with Hybrid Search and FlashRank Cross-Encoder, improving retrieval accuracy by 45%. Developed an autonomous Binary Grader Node to reduce hallucination rates by 35% via live Wikipedia fallback.
-                    </p>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-blue-500/50 transition group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4">
-                        <a href="https://github.com/agrim14" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-github text-2xl"></i></a>
+                <div>
+                    <div class="text-xs mono text-zinc-500 mb-2">PROJECT 004</div>
+                    <h3 class="text-xl font-semibold text-white mb-1">AI-Powered Note-Taking API</h3>
+                    <div class="text-zinc-400 mb-4">Scalable RESTful Backend</div>
+                    <p class="text-sm mb-6 leading-relaxed">Constructed a modular backend featuring stateless JWT authentication and role-based access, supporting 500+ concurrent sessions. Collaborated with the Groq LLM API for real-time summarization.</p>
+                    <div class="flex flex-wrap gap-2 mono">
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">Spring Boot</span>
+                        <span class="project-tag">MySQL</span>
+                        <span class="project-tag">Groq API</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">KrishiSetu</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-cyan-900/50 text-cyan-300 text-xs px-2 py-1 rounded border border-cyan-800">Flutter</span>
-                        <span class="bg-cyan-900/50 text-cyan-300 text-xs px-2 py-1 rounded border border-cyan-800">Dart</span>
-                        <span class="bg-cyan-900/50 text-cyan-300 text-xs px-2 py-1 rounded border border-cyan-800">Firebase</span>
-                    </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                        Built a digital agricultural marketplace and logistics application for the Smart India Hackathon 2026. Engineered a cross-platform mobile interface to connect farmers directly with supply chain networks.
-                    </p>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="py-20 bg-gray-800/50 border-t border-gray-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-white mb-10 flex items-center gap-3">
-                <i class="fas fa-trophy text-yellow-500"></i> Honors & Leadership
+        <!-- Technical Skills -->
+        <section class="mb-24">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-baseline gap-4">
+                <span class="section-number text-sm mono">03 /</span> Technical Skills
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Backend & Languages</h4>
+                    <ul class="space-y-2">
+                        <li>Java (Primary) · Python</li>
+                        <li>Spring Boot · Spring Security</li>
+                        <li>JWT · REST APIs</li>
+                        <li>MySQL · SQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-3">AI & Search Architecture</h4>
+                    <ul class="space-y-2">
+                        <li>RAG · Corrective RAG (CRAG)</li>
+                        <li>Vector DBs (ChromaDB, FAISS)</li>
+                        <li>Amazon Bedrock</li>
+                        <li>Langfuse Observability</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Cloud & DevOps</h4>
+                    <ul class="space-y-2">
+                        <li>AWS (EC2, ECS, Lambda, S3, SSM)</li>
+                        <li>Docker · Git · Linux</li>
+                        <li>ELK Stack Pipeline</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Full-Stack & Mobile</h4>
+                    <ul class="space-y-2">
+                        <li>Flutter · Dart</li>
+                        <li>JavaScript</li>
+                        <li>C / C++</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="mb-24">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-baseline gap-4">
+                <span class="section-number text-sm mono">04 /</span> About & Achievements
             </h2>
             <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                    <div class="mt-1 text-blue-500"><i class="fas fa-medal text-2xl"></i></div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white">All India Rank (AIR) 3</h4>
-                        <p class="text-gray-400 text-sm">Ranked 3rd nationally among 100,000+ candidates in the CISCE Class XII board examinations.</p>
+                <div class="border border-zinc-800 rounded-lg p-6 bg-zinc-900/50">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="text-xl">🏆</span>
+                        <h4 class="text-white font-semibold">National Topper (AIR 3)</h4>
                     </div>
+                    <p class="text-sm text-zinc-400">Ranked 3rd nationally among 100,000+ candidates in CISCE Class XII board examinations.</p>
                 </div>
-                <div class="flex items-start gap-4">
-                    <div class="mt-1 text-blue-500"><i class="fas fa-graduation-cap text-2xl"></i></div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white">Merit Scholarship (VIT Vellore)</h4>
-                        <p class="text-gray-400 text-sm">Awarded top academic performer merit scholarship (Current CGPA: 9.67/10.0).</p>
+                <div class="border border-zinc-800 rounded-lg p-6 bg-zinc-900/50">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="text-xl">🎓</span>
+                        <h4 class="text-white font-semibold">Merit Scholar</h4>
                     </div>
+                    <p class="text-sm text-zinc-400">Awarded top academic performer merit scholarship at VIT Vellore (Current CGPA: 9.67).</p>
                 </div>
-                <div class="flex items-start gap-4">
-                    <div class="mt-1 text-blue-500"><i class="fas fa-users text-2xl"></i></div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white">Secretary, IEEE Professional Communication Society</h4>
-                        <p class="text-gray-400 text-sm">Managing technical outreach and organizational logistics for 500+ society members.</p>
+                <div class="border border-zinc-800 rounded-lg p-6 bg-zinc-900/50">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="text-xl">🤝</span>
+                        <h4 class="text-white font-semibold">Leadership</h4>
                     </div>
+                    <p class="text-sm text-zinc-400">Secretary at IEEE Professional Communication Society (PCS), spearheading tech-outreach for 500+ members.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="py-8 text-center text-gray-500 text-sm bg-gray-900 border-t border-gray-800">
-        <p>&copy; 2026 Agrim Dev Sharma. Built for speed and scalability.</p>
-    </footer>
+        <!-- Footer -->
+        <footer class="pt-8 border-t border-zinc-800 text-sm mono text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>© 2026 Agrim Dev Sharma.</div>
+            <div class="flex gap-4">
+                <a href="https://github.com/agrim14" class="hover:text-white transition">GITHUB</a>
+                <a href="https://linkedin.com/in/agrim-dev-sharma" class="hover:text-white transition">LINKEDIN</a>
+            </div>
+        </footer>
 
+    </div>
 </body>
 </html>
